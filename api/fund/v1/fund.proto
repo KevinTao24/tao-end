@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.fund.v1;
+
+option go_package = "tao-end/api/fund/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.fund.v1";
+
+service Fund {
+	rpc CreateFund (CreateFundRequest) returns (CreateFundReply);
+	rpc UpdateFund (UpdateFundRequest) returns (UpdateFundReply);
+	rpc DeleteFund (DeleteFundRequest) returns (DeleteFundReply);
+	rpc GetFund (GetFundRequest) returns (GetFundReply);
+	rpc ListFund (ListFundRequest) returns (ListFundReply);
+}
+
+message CreateFundRequest {}
+message CreateFundReply {}
+
+message UpdateFundRequest {}
+message UpdateFundReply {}
+
+message DeleteFundRequest {}
+message DeleteFundReply {}
+
+message GetFundRequest {}
+message GetFundReply {}
+
+message ListFundRequest {}
+message ListFundReply {}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.llm.v1;
+
+option go_package = "tao-end/api/llm/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.llm.v1";
+
+service Llm {
+	rpc CreateLlm (CreateLlmRequest) returns (CreateLlmReply);
+	rpc UpdateLlm (UpdateLlmRequest) returns (UpdateLlmReply);
+	rpc DeleteLlm (DeleteLlmRequest) returns (DeleteLlmReply);
+	rpc GetLlm (GetLlmRequest) returns (GetLlmReply);
+	rpc ListLlm (ListLlmRequest) returns (ListLlmReply);
+}
+
+message CreateLlmRequest {}
+message CreateLlmReply {}
+
+message UpdateLlmRequest {}
+message UpdateLlmReply {}
+
+message DeleteLlmRequest {}
+message DeleteLlmReply {}
+
+message GetLlmRequest {}
+message GetLlmReply {}
+
+message ListLlmRequest {}
+message ListLlmReply {}
